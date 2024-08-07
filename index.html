@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة السحب والإفلات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>لعبة اختيار الجواب الصحيح</h1>
+    <div class="container">
+        <div class="sentence">
+            <span>صَاغ اللَّه فُلاناً صِيغَة </span>
+            <div class="dropzone" data-answer="حَسَنَة" draggable="true"></div>
+            <span>، وَخَلَقَهُ خَلْقاً </span>
+            <div class="dropzone" data-answer="سَوِيّاً" draggable="true"></div>
+            <span>، وَأَسَرَهُ أَسْراً </span>
+            <div class="dropzone" data-answer="شَدِيداً" draggable="true"></div>
+            <span>، وأفَرْغَه فِي قَالَب </span>
+            <div class="dropzone" data-answer="الْكَمَال" draggable="true"></div>
+            <span>، وَخَلَقَهُ فِي أَحْسَنِ </span>
+            <div class="dropzone" data-answer="تَقْوِيم" draggable="true"></div>
+            <span>، وَكَوَّنَهُ مِنْ أَجْمَلِ النَّاسِ </span>
+            <div class="dropzone" data-answer="صُورَة" draggable="true"></div>
+            <span>، وَأَكْمَلِهِمْ </span>
+            <div class="dropzone" data-answer="خِلْقَة" draggable="true"></div>
+            <span>، وآنَقِهم </span>
+            <div class="dropzone" data-answer="شَكْلاً" draggable="true"></div>
+            <span>، وَأَحْسَنِهِمْ </span>
+            <div class="dropzone" data-answer="هَيْئَة" draggable="true"></div>
+            <span>، وَأَلْطَفهمْ </span>
+            <div class="dropzone" data-answer="نَشْأَة" draggable="true"></div>
+            <span>، وَأَعْدَلهمْ </span>
+            <div class="dropzone" data-answer="تَكْوِيناً" draggable="true"></div>
+            <span>، وَأَكْرَمهمْ </span>
+            <div class="dropzone" data-answer="طِينَة" draggable="true"></div>
+            <span>، وَأَسْلَمِهِمْ </span>
+            <div class="dropzone" data-answer="فِطْرَة" draggable="true"></div>
+            <span>، وَأَشَدّهمْ </span>
+            <div class="dropzone" data-answer="بِنْيَة" draggable="true"></div>
+            <span>، وَأَقْوَاهُمْ </span>
+            <div class="dropzone" data-answer="جِبْلَة" draggable="true"></div>
+        </div>
+        <div class="words" id="words-container">
+            <div class="word" draggable="true">حَسَنَة</div>
+            <div class="word" draggable="true">سَوِيّاً</div>
+            <div class="word" draggable="true">شَدِيداً</div>
+            <div class="word" draggable="true">الْكَمَال</div>
+            <div class="word" draggable="true">تَقْوِيم</div>
+            <div class="word" draggable="true">صُورَة</div>
+            <div class="word" draggable="true">خِلْقَة</div>
+            <div class="word" draggable="true">شَكْلاً</div>
+            <div class="word" draggable="true">هَيْئَة</div>
+            <div class="word" draggable="true">نَشْأَة</div>
+            <div class="word" draggable="true">تَكْوِيناً</div>
+            <div class="word" draggable="true">طِينَة</div>
+            <div class="word" draggable="true">فِطْرَة</div>
+            <div class="word" draggable="true">بِنْيَة</div>
+            <div class="word" draggable="true">جِبْلَة</div>
+        </div>
+        <button onclick="checkAnswers()">تحقق من الأجوبة</button>
+        <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+        <audio id="wrongSound" src="wrong.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
